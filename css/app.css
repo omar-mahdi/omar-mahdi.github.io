@@ -1,0 +1,183 @@
+body {
+    color: #fff;
+}
+
+p {
+    margin: 10px 0 40px 0;
+    font-size: .8em;
+    width: 375px;
+}
+
+section {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+       background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+    background-repeat:no-repeat;
+}
+
+section:nth-child(1) {
+    background-image: url(../assets/1.png);
+}
+section:nth-child(2) {
+    background-image: url(../assets/2.png);
+}
+section:nth-child(3) {
+    background-image: url(../assets/3.png);
+}
+
+.container-fluid {
+    padding: 3% 5% 0 6%;
+}
+
+.vertical-text {
+    writing-mode: tb-rl;
+    cursor: default;
+    opacity: .7;
+    position: absolute;
+    top: 6%;
+    right: 5.5%;
+}
+
+.second {
+    margin-top: 9%;
+}
+
+.next-page {
+    color: #5bcbff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 3px;
+    border-bottom: 2px solid rgba(199, 199, 199, 0.7);
+    position: absolute;
+    top: 85%;
+    left: 5.9%;
+    cursor: pointer;
+}
+
+.right-arrow {
+    width: 99px;
+    height: auto;
+    display: inline-block;
+    padding-top: 20px;
+    background-image: url(../assets/arrowright.png);
+    object-fit: cover;
+    margin-left: 20px;
+    position: absolute;
+    top: 85%;
+    left: 13%;
+    cursor: pointer;
+}
+
+.right {
+    text-align: right;
+}
+
+.header {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    width: 375px;
+}
+
+.secondary-header {
+    padding-top: 50%;
+}
+
+.down-arrow {
+    background-image: url(../assets/arrowdown.png);
+    width: 19px;
+    height: 100px;
+    position: absolute;
+    top: 70%;
+    right: 5.5%;
+    cursor: pointer;
+}
+
+.text-container {
+    margin-top: 11%;
+}
+
+.separator {
+    font-weight: 700px;
+    font-size: 1.9em;
+}
+
+.counter {
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 1.3em;
+    position: relative;
+}
+
+.counter-label {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    word-spacing: 45px;
+}
+
+.counter-label-2 {
+    position: absolute;
+    top: 120px;
+    left: 195px;
+    word-spacing: 24px;
+}
+
+.counter:not(:first-child) {
+    font-weight: 700;
+}
+
+#logo {
+    position: absolute;
+    top: 6%;
+    left: 6.1%;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .counter {
+        display: block;
+    }
+    .separator {
+        display: none;
+    }
+    .text-container {
+        margin-top: 19%;
+    }
+    .right-arrow {
+        display: none;
+    }
+    p, .header {
+        max-width: 90%;
+    }
+    .onepage-pagination {
+        right: -10%;
+    }
+    .next-page { 
+        top: 89%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 800px) and (orientation: landscape) {
+  
+  p, .header{
+      width: 500px;
+  }
+  
+  .right-arrow {
+      left: 18%;
+  }
+  
+  .onepage-pagination {
+        right: -2.5%;
+    }
+
+}
