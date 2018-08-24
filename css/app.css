@@ -131,6 +131,10 @@ section:nth-child(3) {
     word-spacing: 24px;
 }
 
+.phone-separator {
+    display: inline;
+}
+
 .counter:not(:first-child) {
     font-weight: 700;
 }
@@ -141,39 +145,60 @@ section:nth-child(3) {
     left: 6.1%;
 }
 
-
-@media only screen and (max-width: 480px) {
+/* Phone */
+@media only screen and (max-width: 520px) {
     .counter {
-        display: block;
+        display: inline-block;
     }
+
     .separator {
         display: none;
     }
+
     .text-container {
         margin-top: 19%;
     }
+
     .right-arrow {
         display: none;
     }
+
     p, .header {
         max-width: 90%;
     }
+
     .onepage-pagination {
         right: -10%;
     }
+
     .next-page { 
         top: 89%;
     }
+
+    .phone-separator {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .counter-label {
+        left: 27px;
+    }
+
+    .counter-label-2 {
+        top: 220px;
+        left: 17px;
+    }
 }
 
-@media (min-width: 481px) and (max-width: 800px) and (orientation: landscape) {
+/* Tablet */
+@media (min-width: 521px) and (max-width: 800px) and (orientation: landscape) {
   
   p, .header{
       width: 500px;
   }
   
   .right-arrow {
-      left: 18%;
+      left: 20%;
   }
   
   .onepage-pagination {
