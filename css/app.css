@@ -198,7 +198,7 @@ section:nth-child(3) {
   }
   
   .right-arrow {
-      left: 20%;
+      display: hidden;
   }
   
   .onepage-pagination {
