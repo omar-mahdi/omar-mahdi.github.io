@@ -1,5 +1,12 @@
 body {
     color: #fff;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 p {
@@ -11,7 +18,17 @@ p {
 section {
     background-size: cover;
     background-position: center center; /* First value is from left and second is from top. */
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+    opacity: 0; 
+    transition: 1s;
+    transition-timing-function: ease-in;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 section:nth-child(1) {
@@ -133,6 +150,20 @@ section:nth-child(3) {
 
 .phone-separator {
     display: inline;
+}
+
+.onepage-pagination {
+  position: absolute;
+  top: 50%;
+  right: .8%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
 }
 
 .counter:not(:first-child) {
