@@ -5,6 +5,8 @@ body {
     -o-transition: 1s opacity;
     transition: 1s opacity;
     overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 body.fade-out {
