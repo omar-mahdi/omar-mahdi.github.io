@@ -2,6 +2,7 @@ body {
     color: #fff;
     opacity: 1;
     transition: 1s opacity;
+    overflow: hidden;
 }
 
 body.fade-out {
@@ -47,8 +48,8 @@ section:nth-child(3) {
 
 .vertical-text {
     -webkit-writing-mode: tb-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: tb-rl;
     cursor: default;
     opacity: .7;
     position: absolute;
@@ -79,7 +80,7 @@ section:nth-child(3) {
     padding-top: 20px;
     background-image: url(../assets/arrowright.png);
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     margin-left: 20px;
     position: absolute;
     top: 85%;
@@ -153,17 +154,17 @@ section:nth-child(3) {
 }
 
 .onepage-pagination {
-  position: absolute;
-  top: 50%;
-  right: .8%;
-  z-index: 5;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    position: absolute;
+    top: 50%;
+    right: .8%;
+    z-index: 5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .disabled-onepage-scroll .onepage-pagination {
-  display: none;
+    display: none;
 }
 
 .counter:not(:first-child) {
@@ -181,40 +182,40 @@ section:nth-child(3) {
     .counter {
         display: inline-block;
     }
-
+    
     .separator {
         display: none;
     }
-
+    
     .text-container {
         margin-top: 19%;
     }
-
+    
     .right-arrow {
         display: none;
     }
-
+    
     p, .header {
         max-width: 90%;
     }
-
+    
     .onepage-pagination {
         right: -10%;
     }
-
+    
     .next-page { 
         top: 89%;
     }
-
+    
     .phone-separator {
         display: block;
         margin: 10px 0;
     }
-
+    
     .counter-label {
         left: 27px;
     }
-
+    
     .counter-label-2 {
         top: 220px;
         left: 17px;
@@ -222,18 +223,18 @@ section:nth-child(3) {
 }
 
 /* Tablet */
-@media (min-width: 521px) and (max-width: 800px) and (orientation: landscape) {
-  
-  p, .header{
-      width: 500px;
-  }
-  
-  .right-arrow {
-      display: none;
-  }
-  
-  .onepage-pagination {
+@media (min-width: 521px) and (max-width: 800px) {
+    
+    p, .header{
+        width: 500px;
+    }
+    
+    .right-arrow {
+        display: none;
+    }
+    
+    .onepage-pagination {
         right: -2.5%;
     }
-
+    
 }
